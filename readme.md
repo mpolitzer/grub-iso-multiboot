@@ -1,7 +1,7 @@
 [GRUB iso multiboot]
 ====================
 
-[preview](preview.png?raw=true "pick your poison")
+![preview](preview.png?raw=true "pick your poison")
 
 Auto detect and create entries for .iso files in /iso/
 
@@ -56,6 +56,6 @@ Notes
 
 + boot/ was made with a patched version of grub to add the iso as a parameter.
   check the patch @ linux-extra-variable.diff (The one liner patch is public domain)
-+ the "patch" was made against grub-2.02_rc1 @ https://www.gnu.org/software/grub/
-+ memdisk is a file from syslinux project check them @ http://www.syslinux.org/
++ the "patch" was made against grub-2.02_rc1. got from: https://www.gnu.org/software/grub/
++ memdisk is a file from syslinux project. got from: http://www.syslinux.org/
 
