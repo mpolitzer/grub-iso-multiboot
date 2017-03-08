@@ -1,0 +1,68 @@
+title-text:  "pick a poison"
+title-font:  "DejaVu Sans Bold 20"
+title-color: "#ffffff"
+
+#   message-font: "Gnu Unifont Mono Regular 16"
+#   message-color: "#FFFFFF"
+#   message-bg-color: "#00AAFF"
+
+#desktop-image: "background.png"
+desktop-color: "#303030"
+
+terminal-box : "terminal_box_*.png"
+terminal-font: "DejaVu Sans Bold 12"
+
+# BOOT MENU
+
++ boot_menu {
+	left = 5%
+	width = 55%
+	top = 20%
+	height = 60%
+
+	item_font    = "DejaVu Sans Bold 12"
+	item_color   = "#FFFFFF"
+	item_height  = 20
+#	item_padding = 5
+	item_spacing = 4
+
+	item_icon_space = 8
+	icon_width = 32
+	icon_height = 32
+
+	selected_item_font = "DejaVu Sans Bold 12"
+	selected_item_color = "#FFFFFF"
+	selected_item_pixmap_style = "select_*.png"
+
+#	menu_pixmap_style = "menu_bkg_*.png"
+
+	scrollbar = true
+	scrollbar_width = 20
+	scrollbar_thumb = "slider_*.png"
+}
+
+# INSTRUCTION IMAGE
++ image {
+	top = 100%-90
+	left = 5%
+	width = 640
+	height = 42
+	file = "info.png"
+}
+
+# PROGRESS BAR
++ progress_bar {
+	id = "__timeout__"
+	left = 5%
+	width = 640
+	top = 84%
+	height = 42
+	
+	fg_color = "#4a4a4a"
+	bg_color = "#303030"
+	border_color = #303030"
+	show_text = false
+#	text = "@TIMEOUT_NOTIFICATION_SHORT@"
+#	font = "DejaVu Sans Regular 12"
+#	text_color = "#aaaaaa"
+}
