@@ -27,21 +27,19 @@ This was adapted from https://github.com/Dacha204/grub2-themes-Ettery
 Working
 -------
 
-+ install-amd64-minimal-20170302.iso
-+ void-live-x86_64-musl-20170220.iso
-+ elementaryos-0.4-stable-amd64.20160921.iso
-+ FreeBSD-11.0-RELEASE-amd64-bootonly.iso
-+ bodhi-4.1.0-64.iso
 + Core-current.iso
++ Fedora-Workstation-Live-x86_64-25-1.3.iso
++ FreeBSD-11.0-RELEASE-amd64-bootonly.iso
++ FreeNAS-9.10.2-U2.iso
++ bodhi-4.1.0-64.iso
++ elementaryos-0.4-stable-amd64.20160921.iso
++ install-amd64-minimal-20170302.iso
++ systemrescuecd-x86-4.9.3.iso               (with work around, its isolinux.cfg still doesn't parse)
++ void-live-x86_64-musl-20170220.iso
 
 NonWorking
 ----------
 
-+ systemrescuecd-x86-4.9.3.iso
-```
-# grub failed to parse isolinux.cfg with:
-error: kernel without a label.
-```
 
 + TrueOS-Server-2017-02-22-x64-DVD.iso
 ```
