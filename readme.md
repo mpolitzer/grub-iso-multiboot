@@ -35,6 +35,7 @@ Working
 + elementaryos-0.4-stable-amd64.20160921.iso
 + install-amd64-minimal-20170302.iso
 + systemrescuecd-x86-4.9.3.iso               (with work around, its isolinux.cfg still doesn't parse)
++ ubuntu-16.04.2-desktop-amd64.iso
 + void-live-x86_64-musl-20170220.iso
 
 NonWorking
