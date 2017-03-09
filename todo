@@ -1,0 +1,104 @@
++ distros:
+  ☐ - 002 - Debian
+  ☐ - 004 - Manjaro
+  ☐ - 005 - openSUSE
+  ☐ - 006 - Zorin
+  ☐ - 009 - deepin
+  ☐ - 010 - Antergos
+  ☐ - 011 - CentOS
+  ☐ - 013 - Solus
+  ☐ - 014 - PCLinuxOS
+  ☐ - 015 - ReactOS
+  ☐ - 016 - Lite
+  ☐ - 017 - Mageia
+  ☐ - 018 - Ubuntu MATE
+  ☐ - 019 - KDE neon
+  ☐ - 020 - Lubuntu
+  ☐ - 021 - LXLE
+  ☐ - 022 - Puppy
+  ☐ - 023 - Kali
+  ☐ - 024 - TrueOS
+  ☐ - 025 - antiX
+  ☐ - 026 - Tails
+  ☐ - 027 - Android-x86
+  ☐ - 028 - Peppermint
+  ☐ - 030 - Slackware
+  ☐ - 032 - Apricity
+  ☐ - 033 - SparkyLinux
+  ☐ - 034 - Black Lab
+  ☐ - 035 - Xubuntu
+  ☐ - 036 - KaOS
+  ☐ - 037 - Ultimate
+  ☐ - 038 - ArchBang
+  ☐ - 039 - Netrunner
+  ☐ - 040 - MX Linux
+  ☐ - 041 - Gecko
+  ☐ - 042 - RemixOS
+  ☐ - 043 - Alpine
+  ☐ - 045 - Parrot
+  ☐ - 046 - BlackArch
+  ☐ - 047 - Red Hat
+  ☐ - 048 - wattOS
+  ☐ - 049 - Arya
+  ☐ - 050 - KNOPPIX
+  ☐ - 051 - Kubuntu
+  ☐ - 052 - Sabayon
+  ☐ - 053 - GhostBSD
+  ☐ - 054 - Korora
+  ☐ - 055 - Ubuntu Studio
+  ☐ - 056 - Q4OS
+  ☐ - 057 - ClearOS
+  ☐ - 058 - RancherOS
+  ☐ - 059 - Maui
+  ☐ - 060 - Ubuntu Budgie
+  ☐ - 061 - Porteus
+  ☐ - 062 - 4MLinux
+  ☐ - 063 - Container
+  ☐ - 064 - Ubuntu GNOME
+  ☐ - 065 - Ubuntu DP
+  ☐ - 066 - BackBox
+  ☐ - 067 - Simplicity
+  ☐ - 068 - Qubes
+  ☐ - 069 - Salix
+  ☐ - 070 - Robolinux
+  ☐ - 071 - OpenMandriva
+  ☐ - 072 - ROSA
+  ☐ - 073 - Zenwalk
+  ☐ - 074 - Absolute
+  ☐ - 075 - Scientific
+  ☐ - 076 - Trisquel
+  ☐ - 077 - NuTyX
+  ☐ - 078 - ChaletOS
+  ☐ - 079 - Oracle
+  ☐ - 080 - Clonezilla
+  ☐ - 081 - SteamOS
+  ☐ - 083 - NixOS
+  ☐ - 084 - AV Linux
+  ☐ - 085 - Voyager
+  ☐ - 086 - GoboLinux
+  ☐ - 087 - AUSTRUMI
+  ☐ - 088 - Bluestar
+  ☐ - 089 - Calculate
+  ☐ - 090 - SliTaz
+  ☐ - 091 - Elive
+  ☐ - 092 - Parabola
+  ☐ - 093 - Ubuntu Kylin
+  ☐ - 094 - Vector
+  ☐ - 095 - DragonFly
+  ☐ - 096 - OpenBSD
+  ☐ - 097 - Chakra
+  ☐ - 098 - Rockstor
+  ☐ - 099 - ExTiX
+  ☐ - 100 - GParted
+
++ archive:
+================================================================================
+  ✔ - 001 - Mint                                        @done (2017-03-09 03:25)
+  ✔ - 012 - Arch                                        @done (2017-03-09 04:34)
+  ✔ - 003 - Ubuntu                                      @done (2017-03-09 03:25)
+  ✔ - 007 - elementary                                  @done (2017-03-09 03:25)
+  ✔ - 008 - Fedora                                      @done (2017-03-09 03:25)
+  ✔ - 029 - FreeBSD                                     @done (2017-03-09 03:26)
+  ✔ - 031 - Bodhi                                       @done (2017-03-09 03:26)
+  ✔ - 044 - Gentoo                                      @done (2017-03-09 03:25)
+  ✔ - 082 - Tiny Core                                   @done (2017-03-09 03:28)

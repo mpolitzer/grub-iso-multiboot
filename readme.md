@@ -3,7 +3,10 @@
 
 ![preview](preview.png?raw=true "pick your poison")
 
-Auto detect and create entries for .iso files in /iso/
++ Auto detect and create entries for .iso files in /iso/
++ Preserves the iso boot options!
++ Small and lean, few entries lots of images
++ For a new iso, same script. No need to tweak around.
 
 Guide
 -----
@@ -22,25 +25,26 @@ rsync -a grub-iso-multiboot/boot/ multiboot/boot/
 Theme
 -----
 
-This was adapted from https://github.com/Dacha204/grub2-themes-Ettery
+This theme was adapted from https://github.com/Dacha204/grub2-themes-Ettery
 
-Working
--------
+Working (check todo)
+--------------------
 
 + Core-current.iso
 + Fedora-Workstation-Live-x86_64-25-1.3.iso
 + FreeBSD-11.0-RELEASE-amd64-bootonly.iso
 + FreeNAS-9.10.2-U2.iso
++ archlinux-2017.03.01-dual.iso
 + bodhi-4.1.0-64.iso
 + elementaryos-0.4-stable-amd64.20160921.iso
 + install-amd64-minimal-20170302.iso
-+ systemrescuecd-x86-4.9.3.iso               (with work around, its isolinux.cfg still doesn't parse)
++ linuxmint-18.1-xfce-64bit.iso
++ systemrescuecd-x86-4.9.3.iso               (with work around, grub can't parse its isolinux.cfg)
 + ubuntu-16.04.2-desktop-amd64.iso
 + void-live-x86_64-musl-20170220.iso
 
-NonWorking
-----------
-
+NonWorking (come back to it later)
+----------------------------------
 
 + TrueOS-Server-2017-02-22-x64-DVD.iso
 ```
@@ -84,4 +88,8 @@ Notes
   check the patch @ linux-extra-variable.diff (The one liner patch is public domain)
 + the "patch" was made against grub-2.02_rc1. got from: https://www.gnu.org/software/grub/
 + memdisk is a file from syslinux project. got from: http://www.syslinux.org/
+
++ Also check these projects, they have the same goal as this one.
+  + https://github.com/thias/glim
+  + https://github.com/aguslr/multibootusb,
 
