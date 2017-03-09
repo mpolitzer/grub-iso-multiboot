@@ -32,13 +32,40 @@ Working
 + elementaryos-0.4-stable-amd64.20160921.iso
 + FreeBSD-11.0-RELEASE-amd64-bootonly.iso
 + bodhi-4.1.0-64.iso
++ Core-current.iso
 
 NonWorking
 ----------
 
 + systemrescuecd-x86-4.9.3.iso
 ```
-error: kernel without a label. # grub failed to parse isolinux.cfg
+# grub failed to parse isolinux.cfg with:
+error: kernel without a label.
+```
+
++ TrueOS-Server-2017-02-22-x64-DVD.iso
+```
+takes a while to load the iso,
+but then seems to hang (where vanilla BSD goes on), not sure
+```
++ manjaro-xfce-17.0-stable-x86_64.iso
+```
+# grub failed to parse isolinux.cfg with:
+error: syntax error.
+error: Incorrect command.
+error: syntax error.
+```
++ Solus-2017.01.01.0-Budgie.iso
+```
+# loads isolinux.cfg ok
+seems to hang after splash
+```
++ GoboLinux-016-x86_64.iso
+```
+# Boots the kernel but fails to find the root inside the iso from kernel command line.
+# memdisk would probably work here...
+# You can still manually mount /Mount/CD-ROM if your iso is in a compatible disk
+# but fat/vfat is not one of them. (so 1/2 working)
 ```
 
 How
