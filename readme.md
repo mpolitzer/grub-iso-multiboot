@@ -4,7 +4,7 @@
 ![preview](preview.png?raw=true "pick your poison")
 
 + Auto detect and create entries for .iso files in /iso/
-+ Preserves the iso boot options!
++ Preserves its boot options!
 + Small and lean, few entries lots of images
 + For a new iso, same script. No need to tweak around.
 
@@ -27,8 +27,8 @@ Theme
 
 This theme was adapted from https://github.com/Dacha204/grub2-themes-Ettery
 
-Working (check todo)
---------------------
+Working ISOs (check todo file for distros)
+------------------------------------------
 
 + Core-current.iso
 + Fedora-Workstation-Live-x86_64-25-1.3.iso
@@ -39,9 +39,25 @@ Working (check todo)
 + elementaryos-0.4-stable-amd64.20160921.iso
 + install-amd64-minimal-20170302.iso
 + linuxmint-18.1-xfce-64bit.iso
-+ systemrescuecd-x86-4.9.3.iso               (with work around, grub can't parse its isolinux.cfg)
++ openSUSE-Tumbleweed-NET-x86_64-Snapshot20170308-Media.iso
++ systemrescuecd-x86-4.9.3.iso
+```
+works fine, but has a custom entry.
+grub can't parse its isolinux.cfg.
+```
+
 + ubuntu-16.04.2-desktop-amd64.iso
 + void-live-x86_64-musl-20170220.iso
++ debian-8.7.1-amd64-xfce-CD-1.iso
+```
+Requires grub edit in its entry.
+change syslinux.cfg to one of:
+   adgtk.cfg adtxt.cfg exithelp.cfg gtk.cfg isolinux.cfg menu.cfg prompt.cfg
+   rqgtk.cfg rqtxt.cfg spkgtk.cfg stdmenu.cfg txt.cfg
+
+The `include` from grub interpretation of syslinux has a different behavour than
+the original.
+```
 
 NonWorking (come back to it later)
 ----------------------------------
@@ -49,7 +65,8 @@ NonWorking (come back to it later)
 + TrueOS-Server-2017-02-22-x64-DVD.iso
 ```
 takes a while to load the iso,
-but then seems to hang (where vanilla BSD goes on), not sure
+but then seems to hang with a black screen (where vanilla BSD goes on), not sure
+try again in verbose mode
 ```
 + manjaro-xfce-17.0-stable-x86_64.iso
 ```

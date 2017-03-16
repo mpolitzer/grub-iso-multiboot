@@ -1,12 +1,10 @@
-+ distros:
-  ☐ - 002 - Debian
-  ☐ - 004 - Manjaro
-  ☐ - 005 - openSUSE
++ todo:
+  ⚠ - 004 - Manjaro                                  @blocked (2017-03-09 14:27)
   ☐ - 006 - Zorin
   ☐ - 009 - deepin
   ☐ - 010 - Antergos
   ☐ - 011 - CentOS
-  ☐ - 013 - Solus
+  ⚠ - 013 - Solus                                    @blocked (2017-03-09 14:27)
   ☐ - 014 - PCLinuxOS
   ☐ - 015 - ReactOS
   ☐ - 016 - Lite
@@ -75,7 +73,7 @@
   ☐ - 083 - NixOS
   ☐ - 084 - AV Linux
   ☐ - 085 - Voyager
-  ☐ - 086 - GoboLinux
+  ⚠ - 086 - GoboLinux                                @blocked (2017-03-09 14:27)
   ☐ - 087 - AUSTRUMI
   ☐ - 088 - Bluestar
   ☐ - 089 - Calculate
@@ -94,6 +92,8 @@
 + archive:
 ================================================================================
   ✔ - 001 - Mint                                        @done (2017-03-09 03:25)
+  ✔ - 005 - openSUSE                                    @done (2017-03-09 14:23)
+  ✔ - 002 - Debian                                      @done (2017-03-09 14:23)
   ✔ - 012 - Arch                                        @done (2017-03-09 04:34)
   ✔ - 003 - Ubuntu                                      @done (2017-03-09 03:25)
   ✔ - 007 - elementary                                  @done (2017-03-09 03:25)
