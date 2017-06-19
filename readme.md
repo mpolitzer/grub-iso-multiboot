@@ -19,7 +19,7 @@ sudo grub-install --boot-directory=/mnt/multiboot/boot/ /dev/sdX # where X is yo
 
 2. substitute the boot/ folder created by grub for this one
 ```
-rsync -a grub-iso-multiboot/boot/ multiboot/boot/
+rsync -a grub-iso-multiboot/boot/ /mnt/multiboot/boot/
 ```
 
 Theme
