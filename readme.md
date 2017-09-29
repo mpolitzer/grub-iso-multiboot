@@ -41,6 +41,7 @@ Working ISOs (check todo file for distros)
 + linuxmint-18.1-xfce-64bit.iso
 + openSUSE-Tumbleweed-NET-x86_64-Snapshot20170308-Media.iso
 + systemrescuecd-x86-4.9.3.iso
++ systemrescuecd-x86-5.1.0.iso
 ```
 works fine, but has a custom entry.
 grub can't parse its isolinux.cfg.
@@ -55,7 +56,7 @@ change syslinux.cfg to one of:
    adgtk.cfg adtxt.cfg exithelp.cfg gtk.cfg isolinux.cfg menu.cfg prompt.cfg
    rqgtk.cfg rqtxt.cfg spkgtk.cfg stdmenu.cfg txt.cfg
 
-The `include` from grub interpretation of syslinux has a different behavour than
+The `include` from grub interpretation of syslinux has a different behavior than
 the original.
 ```
 
