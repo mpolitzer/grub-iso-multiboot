@@ -1,0 +1,12 @@
+cd grub
+git apply ../001-add-linux-extra-to-syslinux.diff
+./bootstrap
+./configure --prefix=$PWD/usr/local
+make -j$(nproc)
+make install
+
+echo 'as root:'
+echo '# cd grub'
+echo '#./grub-install --boot-directory=../boot /dev/sdd'
+echo '# cd ../'
+echo '# tar cvf grub-iso-multiboot.tar.gz boot/'

@@ -1,0 +1,12 @@
+diff --git a/grub-core/lib/syslinux_parse.c b/grub-core/lib/syslinux_parse.c
+index ff244d2e0..065efa184 100644
+--- a/grub-core/lib/syslinux_parse.c
++++ b/grub-core/lib/syslinux_parse.c
+@@ -971,6 +971,7 @@ write_entry (struct output_buffer *outbuf,
+ 	print_string ("  linux$linux_suffix ");
+ 	print_file (outbuf, menu, curentry->kernel_file, NULL);
+ 	print_string (" ");
++	print_string (" $linux_extra ");
+ 	if (curentry->append)
+ 	  {
+ 	    err = print (outbuf, curentry->append, grub_strlen (curentry->append));
