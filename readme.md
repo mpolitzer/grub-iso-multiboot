@@ -108,3 +108,10 @@ mount /dev/disk/by-label/GIM /tmp/GIM
 cp <my-iso-file>.iso /tmp/GIM/boot/iso/
 umount /tmp/GIM
 ```
+
+Consider donating:
+
+```
+btc: 1Eufd2CJ2HSALLr9ELXjJ4T3prg6phaQ8o
+eth: 0x1e82c8422682f860ed2002dbb027220ecc71c8ec
+```
