@@ -1,0 +1,5 @@
+pushd grub && {
+	./grub-install --boot-directory=../boot dummy.img
+	popd
+}
+tar cvf grub-iso-multiboot.tar.gz boot/
