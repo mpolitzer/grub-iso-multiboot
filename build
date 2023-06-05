@@ -1,8 +1,14 @@
+#!/bin/sh
+
+export GRUB_BRANCH=grub-2.06
+git clone --branch=$GRUB_BRANCH --depth=1 \
+	https://git.savannah.gnu.org/git/grub.git
+
 cd grub
 git apply ../001-add-linux-extra-to-syslinux.diff
 ./bootstrap
-./configure --prefix=$PWD/usr/local
-make -j$(nproc)
+./configure --prefix=$PWD/usr/local --with-platform=efi
+make -j$(nproc) CFLAGS="-Wno-error"
 make install
 
 echo 'as root:'

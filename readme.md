@@ -18,20 +18,18 @@ export LABEL=<label-of-your-choice>
 
 ### 1.1 Create a partition table:
 ```
-# fdisk /dev/sdX
-o # DOS partition table
+# fdisk --wipe auto /dev/sdX
+g # GPT partition table
 n # new partition
-p # primary
 1 # first
 <enter> # use the whole disk
 <enter> # use the whole disk
-a # toggle bootable (make sure it is now ON)
 w # write
 ```
 
 ### 1.2 Format to FAT
 ```
-# mkfs.fat -n $LABEL /dev/sdX1
+# mkfs.fat -F32 -n $LABEL /dev/sdX1
 ```
 
 ## Or with `gparted`
@@ -65,7 +63,10 @@ pmount /dev/disk/by-label/$LABEL
 
 ### 2.2 install grub & copy release files
 ```
-grub-install --boot-directory=/tmp/$LABEL/boot /dev/sdX
+sudo grub-install --force --removable --no-floppy \
+    --target=x86_64-efi \
+    --boot-directory=/tmp/$LABEL/boot/ \
+    --efi-directory=/mnt/$LABEL/ /dev/sdX
 tar xvf grub-iso-multiboot.tar.gz -C /tmp/$LABEL
 ```
 
@@ -122,14 +123,11 @@ cp <my-iso-file>.iso /tmp/$LABEL/boot/iso/
 umount /tmp/$LABEL
 ```
 
-## 5. Contibute
+## 5. Development
 
-### 5.1 You can contribute by requesting/testing ISOs, and also by making a
-donation.
-
-Consider donating:
+A `Dockerfile` is provided to help building the project.
+It will setup a compilation environment 
 
 ```
-btc: 1Eufd2CJ2HSALLr9ELXjJ4T3prg6phaQ8o
-eth: 0x1e82c8422682f860ed2002dbb027220ecc71c8ec
+sudo qemu-system-x86_64 --enable-kvm /dev/sda -bios /usr/share/edk2-ovmf/OVMF_CODE.fd
 ```

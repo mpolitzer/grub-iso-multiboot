@@ -1,3 +1,0 @@
-[submodule "grub"]
-	path = grub
-	url = https://git.savannah.gnu.org/git/grub.git
